@@ -64,6 +64,7 @@ input.filter-text {
   border-radius: 5px;
   padding: 4px 15px;
   font-size: 14px;
+  margin-bottom: 20px;
 }
 input.filter-text:focus {
   
