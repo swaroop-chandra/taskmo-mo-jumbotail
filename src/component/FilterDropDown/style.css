@@ -1,0 +1,28 @@
+.threedots:after {
+    content: "\2807";
+    min-height: "100px";
+    font-size: 30px;
+    color: #9e81fb;
+  }
+  
+  button.btn.btn-secondary {
+    font-size: 10px;
+    color: black;
+    /* background-image: url("FVector.svg"); */
+    background-position: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    /* padding: 9px 26px; */
+  }
+  /* button.btn.btn-secondary:focus {
+    outline: none;
+    border: none;
+  } */
+  .btn-secondary.focus,
+  .btn-secondary:focus {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+    box-shadow: 0 0 0 0rem rgb(0 0 0 / 100%) !important;
+  }
+  
