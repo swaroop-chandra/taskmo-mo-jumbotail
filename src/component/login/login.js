@@ -54,7 +54,7 @@ function Login({ setLoggedIn, setAdmin }) {
           alt="logo"
           // style={{ height: "100px" }}
         /> */}
-        <div className="loginText">MERCHANT ONBOARDING</div>
+        <div className="loginText">JUMBOTAIL MERCHANT ONBOARDING</div>
         <MyGoogleLogin
           loginFunc={loginFunc}
           logoutFunc={logoutFunc}

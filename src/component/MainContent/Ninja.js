@@ -111,7 +111,7 @@ function Ninja({ setLoggedIn, admin }) {
       }}>Click</button> */}
       <div className="ninja_page">
         <div className="ninja_row1">
-          <p className="n_p1">Bijnis Merchant Onboarding</p>
+          <p className="n_p1">Jumbotail Merchant Onboarding</p>
           <div className="logout-container add-logout-style">
             <button
               className="logout-btn"

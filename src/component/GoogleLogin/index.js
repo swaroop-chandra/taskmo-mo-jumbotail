@@ -49,7 +49,7 @@ export class MyGoogleLogin extends Component {
     return (
       <>
         <GoogleLogin
-          clientId="800470593510-95ns67g69fr5ne0cda6uks9ube3s543a.apps.googleusercontent.com"
+          clientId="800470593510-molcputqjbfdkv7bvnlionn5uib3954i.apps.googleusercontent.com"
           //below is localhost
           // clientId="800470593510-v4rijm08vf4iapke1q4jr1k1odg62dp8.apps.googleusercontent.com"
           buttonText="Sign In With Google"
