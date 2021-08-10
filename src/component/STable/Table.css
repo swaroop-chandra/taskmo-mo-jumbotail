@@ -75,7 +75,7 @@ input.filter-text:focus {
   display: flex;
   width:100%;
   justify-content: flex-end;
-  margin-bottom:-37px;
+  margin-bottom:0px;
 }
 
 .rdt_TableRow{
