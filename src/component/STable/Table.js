@@ -6,30 +6,6 @@ import StatusBar from "../StatusBar/StatusBar";
 import TripleDotDropDown from "../TripleDotDropDown";
 
 import DataTableExtensions from "react-data-table-component-extensions";
-createTheme("solarized", {
-  text: {
-    primary: "black",
-    secondary: "#b2b2b2",
-  },
-  background: {
-    default: "#f2f2f2",
-  },
-  boxshadow: {
-    default: "5px 5px 30px #DEDEDEBF",
-  },
-  context: {
-    background: "#cb4b16",
-    text: "#FFFFFF",
-  },
-  divider: {
-    default: "#fafafa",
-  },
-  action: {
-    button: "rgba(0,0,0,.54)",
-    hover: "rgba(0,0,0,.08)",
-    disabled: "rgba(0,0,0,.12)",
-  },
-});
 
 function Table({ api, admin }) {
   const columns = [
@@ -45,13 +21,13 @@ function Table({ api, admin }) {
       center: true,
       cell: (d) => <div>{d.activity_date}</div>,
     },
-    {
-      name: "MID",
-      selector: "mid",
-      sortable: true,
-      center: true,
-      cell: (d) => <div>{d.mid}</div>,
-    },
+    // {
+    //   name: "MID",
+    //   selector: "mid",
+    //   sortable: true,
+    //   center: true,
+    //   cell: (d) => <div>{d.mid}</div>,
+    // },
     {
       name: "Merchant Name",
       selector:"merchant_name",
@@ -86,13 +62,8 @@ function Table({ api, admin }) {
       center: true,
     },
     {
-      name: "KYC Status",
-      cell: (d) => <div className={d.stage2_status}>{d.stage2_status}</div>,
-      center: true,
-    },
-    {
       name: "Order Status",
-      cell: (d) => <div className={d.stage3_status}>{d.stage3_status}</div>,
+      cell: (d) => <div className={d.stage2_status}>{d.stage2_status}</div>,
       center: true,
     },
   ];
@@ -123,9 +94,7 @@ function Table({ api, admin }) {
           <DataTable
             columns={columns}
             data={table_data.data}
-            defaultSortFieldId={2}
             pagination
-            theme="solarized"
           />
         </DataTableExtensions>
       </div>
