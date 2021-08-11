@@ -41,11 +41,11 @@ function Login({ setLoggedIn, setAdmin }) {
     // </div>
     <div className="login-container">
       <div className="img-container">
-        {/* <img
-          src={window.location.origin + "/images/jiomart.gif"}
+        <img
+          src={window.location.origin + "/images/jumbo.jpeg"}
           alt="profile"
           className="bg_img"
-        /> */}
+        />
       </div>
 
       <div className="btn-block-container">
@@ -54,7 +54,7 @@ function Login({ setLoggedIn, setAdmin }) {
           alt="logo"
           // style={{ height: "100px" }}
         /> */}
-        <div className="loginText">JUMBOTAIL MERCHANT ONBOARDING</div>
+        <div className="loginText">MERCHANT ONBOARDING</div>
         <MyGoogleLogin
           loginFunc={loginFunc}
           logoutFunc={logoutFunc}
