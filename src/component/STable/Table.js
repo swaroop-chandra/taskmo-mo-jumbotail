@@ -66,6 +66,16 @@ function Table({ api, admin }) {
       cell: (d) => <div className={d.stage2_status}>{d.stage2_status}</div>,
       center: true,
     },
+    {
+      name:"Merchant Image",
+      cell: (d) => <div><a href={`https://isp.taskmo.in/fieldon_images/${d.merchant_image}`} target="_blank">View</a></div>,
+      center: true,
+    },
+    {
+      name:"Order Image",
+      cell: (d) => <div><a href={`https://isp.taskmo.in/fieldon_images/${d.order_image}`} target="_blank">View</a></div>,
+      center: true,
+    }
   ];
   if (admin) {
     columns.splice(2, 0, {
