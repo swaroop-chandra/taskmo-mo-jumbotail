@@ -68,12 +68,12 @@ function Table({ api, admin }) {
     },
     {
       name:"Merchant Image",
-      cell: (d) => <div><a href={`https://isp.taskmo.in/fieldon_images/${d.merchant_image}`} target="_blank">View</a></div>,
+      cell: (d) => <div>{d.merchant_image.length===0?<>Unavailable</>:<a href={`https://isp.taskmo.in/fieldon_images/${d.merchant_image}`} target="_blank">View</a>}</div>,
       center: true,
     },
     {
       name:"Order Image",
-      cell: (d) => <div><a href={`https://isp.taskmo.in/fieldon_images/${d.order_image}`} target="_blank">View</a></div>,
+      cell: (d) => <div>{d.order_image.length===0?<>Unavailable</>:<a href={`https://isp.taskmo.in/fieldon_images/${d.order_image}`} target="_blank">View</a>}</div>,
       center: true,
     }
   ];
