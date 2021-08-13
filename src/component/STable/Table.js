@@ -68,12 +68,16 @@ function Table({ api, admin }) {
     },
     {
       name:"Merchant Image",
-      cell: (d) => <div>{d.merchant_image.length===0?<>Unavailable</>:<a href={`https://isp.taskmo.in/fieldon_images/${d.merchant_image}`} target="_blank">View</a>}</div>,
+      cell: (d) => <div>{d.merchant_image && d.merchant_image.length===0?<>Unavailable</>:<a href={`https://isp.taskmo.in/fieldon_images/${d.merchant_image}`} target="_blank">View</a>}</div>,
       center: true,
     },
     {
       name:"Order Image",
-      cell: (d) => <div>{d.order_image.length===0?<>Unavailable</>:<a href={`https://isp.taskmo.in/fieldon_images/${d.order_image}`} target="_blank">View</a>}</div>,
+      cell: (d) => <div>{ d.order_image.length===0?<>Unavailable</>:<a href={`https://isp.taskmo.in/fieldon_images/${d.order_image}`} target="_blank">View</a>}</div>,
+      center: true,
+    },{
+      name:"Shop Image",
+      cell: (d) => <div>{d.shop_image && d.shop_image.length===0?<>Unavailable</>:<a href={`https://isp.taskmo.in/fieldon_images/${d.shop_image}`} target="_blank">View</a>}</div>,
       center: true,
     }
   ];
