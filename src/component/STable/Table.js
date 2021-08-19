@@ -62,8 +62,13 @@ function Table({ api, admin }) {
       center: true,
     },
     {
-      name: "Order Status",
+      name: "KYC Status",
       cell: (d) => <div className={d.stage2_status}>{d.stage2_status}</div>,
+      center: true,
+    },
+    {
+      name: "Order Status",
+      cell: (d) => <div className={d.stage3_status}>{d.stage3_status}</div>,
       center: true,
     },
     {
