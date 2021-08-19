@@ -11,7 +11,7 @@ function Table({ api, admin }) {
   const columns = [
     {
       name: "Lead ID",
-      selector:"lead_id",
+      selector: "lead_id",
       sortable: true,
       center: true,
       cell: (d) => <div>{d.lead_id}</div>,
@@ -30,28 +30,28 @@ function Table({ api, admin }) {
     // },
     {
       name: "Merchant Name",
-      selector:"merchant_name",
+      selector: "merchant_name",
       cell: (d) => <div>{d.merchant_name}</div>,
       sortable: true,
       center: true,
     },
     {
       name: "Store Name",
-      selector:"shop_name",
+      selector: "shop_name",
       cell: (d) => <div>{d.shop_name}</div>,
       sortable: true,
       center: true,
     },
     {
       name: "Contact Number",
-      selector:"merchant_number",
+      selector: "merchant_number",
       cell: (d) => <div>{d.merchant_number}</div>,
       sortable: true,
       center: true,
     },
     {
       name: "City",
-      selector:"city",
+      selector: "city",
       cell: (d) => <div>{d.city}</div>,
       sortable: true,
       center: true,
@@ -68,28 +68,76 @@ function Table({ api, admin }) {
     },
     {
       name: "Order Status",
-      cell: (d) => <div className={d.stage3_status}>{d.stage3_status}</div>,
+      cell: (d) => (
+        <div
+          className={`${d.stage3_status === "0" ? "Pending" : ""} ${
+            d.stage3_status === "1" ? "Approve" : ""
+          } ${d.stage3_status === "3" ? "Rejected" : ""}`}
+        >{`${d.stage3_status === "0" ? "Pending" : ""} ${
+          d.stage3_status === "1" ? "Approve" : ""
+        } ${d.stage3_status === "3" ? "Rejected" : ""}`}</div>
+      ),
       center: true,
     },
     {
-      name:"Merchant Image",
-      cell: (d) => <div>{d.merchant_image && d.merchant_image.length===0?<>Unavailable</>:<a href={`https://isp.taskmo.in/fieldon_images/${d.merchant_image}`} target="_blank">View</a>}</div>,
+      name: "Merchant Image",
+      cell: (d) => (
+        <div>
+          {d.merchant_image && d.merchant_image.length === 0 ? (
+            <>Unavailable</>
+          ) : (
+            <a
+              href={`https://isp.taskmo.in/fieldon_images/${d.merchant_image}`}
+              target="_blank"
+            >
+              View
+            </a>
+          )}
+        </div>
+      ),
       center: true,
     },
     {
-      name:"Order Image",
-      cell: (d) => <div>{ d.order_image.length===0?<>Unavailable</>:<a href={`https://isp.taskmo.in/fieldon_images/${d.order_image}`} target="_blank">View</a>}</div>,
+      name: "Order Image",
+      cell: (d) => (
+        <div>
+          {d.order_image.length === 0 ? (
+            <>Unavailable</>
+          ) : (
+            <a
+              href={`https://isp.taskmo.in/fieldon_images/${d.order_image}`}
+              target="_blank"
+            >
+              View
+            </a>
+          )}
+        </div>
+      ),
       center: true,
-    },{
-      name:"Shop Image",
-      cell: (d) => <div>{d.shop_image && d.shop_image.length===0?<>Unavailable</>:<a href={`https://isp.taskmo.in/fieldon_images/${d.shop_image}`} target="_blank">View</a>}</div>,
+    },
+    {
+      name: "Shop Image",
+      cell: (d) => (
+        <div>
+          {d.shop_image && d.shop_image.length === 0 ? (
+            <>Unavailable</>
+          ) : (
+            <a
+              href={`https://isp.taskmo.in/fieldon_images/${d.shop_image}`}
+              target="_blank"
+            >
+              View
+            </a>
+          )}
+        </div>
+      ),
       center: true,
-    }
+    },
   ];
   if (admin) {
     columns.splice(2, 0, {
       name: "FSE Id",
-      selector:"user_id",
+      selector: "user_id",
       cell: (d) => <div>{d.user_id}</div>,
       sortable: true,
       center: true,
@@ -110,11 +158,7 @@ function Table({ api, admin }) {
           export={false}
           filterPlaceholder={`Search`}
         >
-          <DataTable
-            columns={columns}
-            data={table_data.data}
-            pagination
-          />
+          <DataTable columns={columns} data={table_data.data} pagination />
         </DataTableExtensions>
       </div>
     </div>
