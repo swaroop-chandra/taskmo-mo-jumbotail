@@ -1,5 +1,5 @@
 import "./App.css";
-import Ninja from "./component/MainContent/Ninja";
+import Ninja from "./component/MainContent2/Ninja";
 import {
   BrowserRouter as Router,
   Switch,
