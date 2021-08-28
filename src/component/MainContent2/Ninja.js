@@ -110,18 +110,22 @@ function Ninja({ setLoggedIn, admin }) {
         setChartLeftOption({...chartLeftOption});
       }}>Click</button> */}
       <div className="ninja_page">
-        <div className="ninja_row1">
+      <div className="bijnis_row1">
+          <div></div>
           <p className="n_p1">JUMBOTAIL Merchant Onboarding</p>
-          <div className="logout-container add-logout-style">
-            <button
-              className="logout-btn"
-              onClick={() => {
-                localStorage.removeItem("jma");
-                setLoggedIn(false);
-              }}
-            >
-              Logout
-            </button>
+          <div
+            className="logout-container"
+            style={{
+              backgroundImage: `url(${
+                window.location.origin + "/images/Logout.svg"
+              })`,
+            }}
+            onClick={() => {
+              localStorage.removeItem("jma");
+              setLoggedIn(false);
+            }}
+          >
+            <p className="bijnis_p1">Logout</p>
           </div>
         </div>
 

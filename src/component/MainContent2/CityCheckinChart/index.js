@@ -10,7 +10,8 @@ export default function CityCheckinChart() {
   const [renderChart, setRenderChart] = useState(false);
   const [chartOptions, setChartOptions] = useState({
     // color: ['#62549c', '#7566b5', '#7d6cbb', '#8877bd', '#9181bd', '#6957af'],
-    color: ["#0277bd","#039be5",'#29b6f6', "#0277bd","#039be5",'#29b6f6'],
+    // color: ["#0277bd","#039be5",'#29b6f6', "#0277bd","#039be5",'#29b6f6'],
+    color: ["#6BAD8F","#40A778",'#5AB58C', "#6BAD8F","#40A778",'#5AB58C'],
     tooltip: {
       show: true,
       backgroundColor: "rgba(0, 0, 0, .8)",

@@ -9,7 +9,8 @@ export default function CityLeadRegisterChart() {
   const [title, setTitle] = useState("Today's");
   const [renderChart, setRenderChart] = useState(false);
   const [chartOptions, setChartOptions] = useState({
-    color: ["#0277bd","#039be5",'#29b6f6', "#0277bd","#039be5",'#29b6f6'],
+    // color: ["#0277bd","#039be5",'#29b6f6', "#0277bd","#039be5",'#29b6f6'],
+    color: ["#6BAD8F","#40A778",'#5AB58C', "#6BAD8F","#40A778",'#5AB58C'],
     tooltip: {
       show: true,
       backgroundColor: "rgba(0, 0, 0, .8)",

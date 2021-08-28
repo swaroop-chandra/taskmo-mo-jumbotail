@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="48" viewBox="0 0 140 48">
+  <g id="Logout" transform="translate(-1704 -58)">
+    <g id="Rectangle_14520" data-name="Rectangle 14520" transform="translate(1704 58)" fill="rgba(193,170,255,0.08)" stroke="#855bf5" stroke-width="1">
+      <rect width="140" height="48" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="139" height="47" rx="4.5" fill="none"/>
+    </g>
+    <g id="Group_39720" data-name="Group 39720" transform="translate(-7290 -10383)">
+      <rect id="Rectangle_14519" data-name="Rectangle 14519" width="32" height="32" transform="translate(9006 10449)" fill="#fff" opacity="0"/>
+      <g id="noun_logout_3499146" transform="translate(9012.241 10455.24)">
+        <g id="Layer_5" data-name="Layer 5">
+          <path id="Path_33076" data-name="Path 33076" d="M6.43,23.44h8.1a2.43,2.43,0,0,0,2.43-2.43V20.2a.81.81,0,1,0-1.62,0v.81a.81.81,0,0,1-.81.81H6.43a.81.81,0,0,1-.81-.81V6.43a.81.81,0,0,1,.81-.81h8.1a.81.81,0,0,1,.81.81v.81a.81.81,0,1,0,1.62,0V6.43A2.43,2.43,0,0,0,14.53,4H6.43A2.43,2.43,0,0,0,4,6.43V21.01A2.43,2.43,0,0,0,6.43,23.44Z" transform="translate(-4 -4)" fill="#855bf5"/>
+          <path id="Path_33077" data-name="Path 33077" d="M21.575,11a.81.81,0,0,0-1.142,1.142L22.482,14.2H10.81a.81.81,0,1,0,0,1.62H22.482l-2.049,2.057a.808.808,0,0,0,1.142,1.142l2.292-2.292a2.43,2.43,0,0,0,0-3.434Z" transform="translate(-5.14 -5.294)" fill="#855bf5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

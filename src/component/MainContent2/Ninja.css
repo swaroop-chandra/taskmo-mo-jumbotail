@@ -497,3 +497,27 @@ button.logout-btn {
   justify-content: space-evenly;
   align-items: center;
 }
+.bijnis_row1 {
+  padding: 0px 60px;
+  border: 2px solid #EFEEEF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logout-container {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+p.bijnis_p1 {
+  margin: 0;
+  margin-left: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #855BF5;
+}
