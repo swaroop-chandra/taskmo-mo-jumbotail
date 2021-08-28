@@ -56,31 +56,36 @@ function Table({ api, admin }) {
       sortable: true,
       center: true,
     },
+    // {
+    //   name: "MID status",
+    //   cell: (d) => <div className={d.stage1_status}>{d.stage1_status}</div>,
+    //   center: true,
+    // },
+    // {
+    //   name: "KYC Status",
+    //   cell: (d) => <div className={d.stage2_status}>{d.stage2_status}</div>,
+    //   center: true,
+    // },
+    //     {
+    //   name: "Merchant Image",
+    //   cell: (d) => (
+    //     <div>
+    //       {d.merchant_image && d.merchant_image.length === 0 ? (
+    //         <>Unavailable</>
+    //       ) : (
+    //         <a
+    //           href={`https://isp.taskmo.in/fieldon_images/${d.merchant_image}`}
+    //           target="_blank"
+    //         >
+    //           View
+    //         </a>
+    //       )}
+    //     </div>
+    //   ),
+    //   center: true,
+    // },
     {
-      name: "MID status",
-      cell: (d) => <div className={d.stage1_status}>{d.stage1_status}</div>,
-      center: true,
-    },
-    {
-      name: "KYC Status",
-      cell: (d) => <div className={d.stage2_status}>{d.stage2_status}</div>,
-      center: true,
-    },
-    {
-      name: "Order Status",
-      cell: (d) => (
-        <div
-          className={`${d.stage3_status === "0" ? "Pending" : ""} ${
-            d.stage3_status === "1" ? "Approve" : ""
-          } ${d.stage3_status === "3" ? "Rejected" : ""}`}
-        >{`${d.stage3_status === "0" ? "Pending" : ""} ${
-          d.stage3_status === "1" ? "Approve" : ""
-        } ${d.stage3_status === "3" ? "Rejected" : ""}`}</div>
-      ),
-      center: true,
-    },
-    {
-      name: "Merchant Image",
+      name: "Merchant Account Creation ss",
       cell: (d) => (
         <div>
           {d.merchant_image && d.merchant_image.length === 0 ? (
@@ -98,38 +103,56 @@ function Table({ api, admin }) {
       center: true,
     },
     {
-      name: "Order Image",
-      cell: (d) => (
-        <div>
-          {d.order_image.length === 0 ? (
-            <>Unavailable</>
-          ) : (
-            <a
-              href={`https://isp.taskmo.in/fieldon_images/${d.order_image}`}
-              target="_blank"
-            >
-              View
-            </a>
-          )}
-        </div>
-      ),
+      name: "QC Status",
+      cell: (d) => <div className={d.stage2_status}>{d.stage2_status}</div>,
       center: true,
     },
+    // {
+    //   name: "Order Image",
+    //   cell: (d) => (
+    //     <div>
+    //       {d.order_image.length === 0 ? (
+    //         <>Unavailable</>
+    //       ) : (
+    //         <a
+    //           href={`https://isp.taskmo.in/fieldon_images/${d.order_image}`}
+    //           target="_blank"
+    //         >
+    //           View
+    //         </a>
+    //       )}
+    //     </div>
+    //   ),
+    //   center: true,
+    // },
+    // {
+    //   name: "Shop Image",
+    //   cell: (d) => (
+    //     <div>
+    //       {d.shop_image && d.shop_image.length === 0 ? (
+    //         <>Unavailable</>
+    //       ) : (
+    //         <a
+    //           href={`https://isp.taskmo.in/fieldon_images/${d.shop_image}`}
+    //           target="_blank"
+    //         >
+    //           View
+    //         </a>
+    //       )}
+    //     </div>
+    //   ),
+    //   center: true,
+    // },
     {
-      name: "Shop Image",
+      name: "Order Status",
       cell: (d) => (
-        <div>
-          {d.shop_image && d.shop_image.length === 0 ? (
-            <>Unavailable</>
-          ) : (
-            <a
-              href={`https://isp.taskmo.in/fieldon_images/${d.shop_image}`}
-              target="_blank"
-            >
-              View
-            </a>
-          )}
-        </div>
+        <div
+          className={`${d.stage3_status === "0" ? "Pending" : ""} ${
+            d.stage3_status === "1" ? "Approve" : ""
+          } ${d.stage3_status === "3" ? "Rejected" : ""}`}
+        >{`${d.stage3_status === "0" ? "Pending" : ""} ${
+          d.stage3_status === "1" ? "Approve" : ""
+        } ${d.stage3_status === "3" ? "Rejected" : ""}`}</div>
       ),
       center: true,
     },
