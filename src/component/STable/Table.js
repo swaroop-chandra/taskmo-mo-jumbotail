@@ -11,6 +11,7 @@ function Table({ api, admin }) {
   const columns = [
     {
       name: "Lead ID",
+      width: "100px",
       selector: "lead_id",
       sortable: true,
       center: true,
@@ -18,6 +19,7 @@ function Table({ api, admin }) {
     },
     {
       name: "Date",
+      width: "120px",
       center: true,
       cell: (d) => <div>{d.activity_date}</div>,
     },
@@ -30,6 +32,7 @@ function Table({ api, admin }) {
     // },
     {
       name: "Merchant Name",
+      width: "200px",
       selector: "merchant_name",
       cell: (d) => <div>{d.merchant_name}</div>,
       sortable: true,
@@ -38,12 +41,14 @@ function Table({ api, admin }) {
     {
       name: "Store Name",
       selector: "shop_name",
+      width: "230px",
       cell: (d) => <div>{d.shop_name}</div>,
       sortable: true,
       center: true,
     },
     {
       name: "Contact Number",
+      width: "150px",
       selector: "merchant_number",
       cell: (d) => <div>{d.merchant_number}</div>,
       sortable: true,
@@ -86,6 +91,7 @@ function Table({ api, admin }) {
     // },
     {
       name: "Merchant Account Creation ss",
+      width: "140px",
       cell: (d) => (
         <div>
           {d.merchant_image && d.merchant_image.length === 0 ? (
@@ -104,6 +110,7 @@ function Table({ api, admin }) {
     },
     {
       name: "QC Status",
+
       cell: (d) => <div className={d.stage2_status}>{d.stage2_status}</div>,
       center: true,
     },
@@ -145,6 +152,7 @@ function Table({ api, admin }) {
     // },
     {
       name: "Order Status",
+
       cell: (d) => (
         <div
           className={`${d.stage3_status === "0" ? "Pending" : ""} ${
