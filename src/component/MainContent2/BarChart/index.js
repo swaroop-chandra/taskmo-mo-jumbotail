@@ -1,5 +1,5 @@
-import { echartBarOptionRapido, rCountChartOption } from "../../echarts/echartOptions";
-import AppEchart from "../../echarts/AppEchart";
+import { echartBarOptionRapido, rCountChartOption } from "../../echarts2/echartOptions";
+import AppEchart from "../../echarts2/AppEchart";
 import { useEffect, useState } from "react";
 import { TODAY_LEAD_URL,THIS_MONTH_LEAD_URL} from "../../../utils";
 import FilterDropDown from "../../FilterDropDown";

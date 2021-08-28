@@ -40,3 +40,12 @@
 div{
   text-align:center;
 }
+button.btn.btn-secondary {
+  font-size: 10px;
+  color: black;
+  /* background-image: url(FVector.svg); */
+  background-position: center;
+  background-color: #6BAD8F2B !important;
+  background-repeat: no-repeat;
+  /* padding: 9px 26px; */
+}
