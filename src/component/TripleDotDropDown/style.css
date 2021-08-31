@@ -1,25 +1,209 @@
 .threedots:after {
-    content: "\2807";
-    font-size: 30px;
-    color:#9E81FB;
-  }
-  .uploadReport{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding-left: 20px; */
-    padding-right: 20px;
-    padding-top:10px;
-  }
-.upload-container{
-  margin-top: 5px;
-    color: gray;
-    font-size: 10px;
-    padding-left: 24px;
-    padding-bottom: 5px;
+  content: "\2807";
+  font-size: 30px;
+  color: #9e81fb;
 }
-.uploadReportTitle{
+.dropdown-menu.show {
+  margin-left: -53px;
+  margin-top: -12px;
+  font-size: 12px;
+  color: #855bf5 !important;
+}
+.dropdown-item {
+  /* display: block; */
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #855bf5 !important;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+}
+img.drop_image_download {
+  width: 30px;
+  height: 30px;
+}
+
+div#form_date_picker {
+  position: absolute;
+  /* width: 230px; */
+  background: #fff;
+  /* height: 100px; */
+  margin-left: -315px;
+  z-index: 5;
+  margin-top: -18px;
+  box-shadow: 10px 15px 20px #b7b7b741;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  padding: 18px 25px;
+}
+div#form_date_checkin_picker {
+  position: absolute;
+  /* width: 230px; */
+  background: #fff;
+  /* height: 100px; */
+  margin-left: -315px;
+  z-index: 5;
+  margin-top: -18px;
+  box-shadow: 10px 15px 20px #b7b7b741;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  padding: 18px 25px;
+}
+
+.title_download {
+  font-size: 12px;
+  font-weight: 600;
   text-align: left;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.subtitle_download {
+  font-size: 10px;
+  color: #b2b2b2;
+  margin: 5px;
+  text-align: left;
+  margin-left: 0;
+}
+.input_row_download {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+input.input_download {
+  border: none;
+  border-bottom: 2px solid #c1aaff;
+  margin: 10px;
+  font-size: 11px;
+  margin-left: 0;
+}
+.input_download::placeholder {
+  color: #ded1ff;
+}
+
+.city_row_download {
+  display: flex;
+  font-size: 12px;
+  color: #ded1ff;
+  align-items: center;
+}
+select.select_download {
+  width: 38%;
+  height: 30px;
+  margin: 5px;
+  border: 1px solid #c1aaff;
+  border-radius: 5px;
+  padding: 5px;
+}
+p.download_p1 {
+  width: 70px;
+  display: flex;
+}
+.button_download {
+  background: #855bf5 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: #fff;
+  width: 40%;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.flex_download {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+img.close_button {
+  cursor: pointer;
+  margin-right: -12px;
+  margin-top: -22px;
+}
+
+div#modal_full_upload {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 100%;
+  height: 800px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_card_upload {
+  background: #fff;
+  box-shadow: 10px 15px 30px #00000029;
+  border: 1px solid #707070;
+  border-radius: 30px;
+  width: 70%;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img.document_upload_image {
+  width: 60px;
+  height: 60px;
+}
+p.modal_text_p1 {
+  margin: 8px;
+}
+
+.button_download_modal {
+  background: #855bf5 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: #fff;
+  width: 55%;
+  font-size: 10px;
+  margin: auto;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.close_button_upload {
+  position: absolute;
+  right: 17%;
+  cursor: pointer;
+  top: 15%;
+  width: 45px;
+  height: 85px;
+}
+
+a.click_browse {
+  text-decoration: underline;
+  cursor: pointer;
+}
+p.model_text_p3 {
+  /* border: 1px solid #855bf5; */
+  border-radius: 30px;
+  padding: 8px;
+  background: #fafafa;
+  margin: 15px 0;
+  font-size: 11px;
+}
+p.modal_text_p4 {
+  margin-top: 105px;
   font-size: 15px;
-  color: black;
+}
+p.modal_text_p2 {
+  font-size: 12px;
+  margin: 10px;
+  color: #aaaaaa;
+  margin-top: -12px;
 }
