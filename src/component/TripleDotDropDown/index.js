@@ -23,24 +23,45 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
 export default function TripleDotDropDown({ admin }) {
   return (
     <>
-    {admin?<>
-      <Dropdown>
-      <Dropdown.Toggle as={CustomToggle} />
-      <Dropdown.Menu size="sm" title="">
-        {/* <Dropdown.Header>Options</Dropdown.Header> */}
-        <Dropdown.Item href={admin ? leadReportAdminUrl : leadReportClientUrl}>
-          Lead Report{" "}
-        </Dropdown.Item>
-        {admin ? (
-          <Dropdown.Item href={downloadCheckinReportUrl}>
-            Check In Report
-          </Dropdown.Item>
-        ) : null}
-        {/* <Dropdown.Item>Upload</Dropdown.Item> */}
-      </Dropdown.Menu>
-    </Dropdown>
-    
-    </>:<></>}
+      {admin ? (
+        <>
+          <Dropdown>
+            <Dropdown.Toggle as={CustomToggle} />
+            <Dropdown.Menu size="sm" title="">
+              {/* <Dropdown.Header>Options</Dropdown.Header> */}
+              <Dropdown.Item
+                href={admin ? leadReportAdminUrl : leadReportClientUrl}
+              >
+                Lead Report{" "}
+              </Dropdown.Item>
+              {admin ? (
+                <>
+                  <Dropdown.Item href={downloadCheckinReportUrl}>
+                    Check In Report
+                  </Dropdown.Item>
+
+                    <div className="upload-container">
+                      <div className ="uploadReportTitle">Upload Report</div>
+                      <form
+                        // onSubmit={submitForm}
+                        id="testForm"
+                        className={"uploadReport"}
+                      >
+                        {/* <input type="text" id="testName" /> */}
+                        <input type="file" name="test" id="testFile" />
+                        <button type="submit">Submit</button>
+                      </form>
+                    </div>
+
+                </>
+              ) : null}
+              {/* <Dropdown.Item>Upload</Dropdown.Item> */}
+            </Dropdown.Menu>
+          </Dropdown>
+        </>
+      ) : (
+        <></>
+      )}
     </>
   );
 }

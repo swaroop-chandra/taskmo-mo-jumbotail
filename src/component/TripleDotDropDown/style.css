@@ -3,3 +3,23 @@
     font-size: 30px;
     color:#9E81FB;
   }
+  .uploadReport{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 20px; */
+    padding-right: 20px;
+    padding-top:10px;
+  }
+.upload-container{
+  margin-top: 5px;
+    color: gray;
+    font-size: 10px;
+    padding-left: 24px;
+    padding-bottom: 5px;
+}
+.uploadReportTitle{
+  text-align: left;
+  font-size: 15px;
+  color: black;
+}

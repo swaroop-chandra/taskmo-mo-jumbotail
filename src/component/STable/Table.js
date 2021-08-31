@@ -41,7 +41,7 @@ function Table({ api, admin }) {
     {
       name: "Store Name",
       selector: "shop_name",
-      width: "230px",
+      width: "220px",
       cell: (d) => <div>{d.shop_name}</div>,
       sortable: true,
       center: true,
@@ -110,9 +110,9 @@ function Table({ api, admin }) {
     },
     {
       name: "QC Status",
-
       cell: (d) => <div className={d.stage2_status}>{d.stage2_status}</div>,
       center: true,
+      width:"120px"
     },
     // {
     //   name: "Order Image",

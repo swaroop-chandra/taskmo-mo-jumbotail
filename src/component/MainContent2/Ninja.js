@@ -113,6 +113,7 @@ function Ninja({ setLoggedIn, admin }) {
       <div className="bijnis_row1">
           <div></div>
           <p className="n_p1">JUMBOTAIL Merchant Onboarding</p>
+
           <div
             className="logout-container"
             style={{
