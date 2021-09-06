@@ -86,13 +86,6 @@ input.input_download {
 .input_download::placeholder {
   color: #ded1ff;
 }
-
-.city_row_download {
-  display: flex;
-  font-size: 12px;
-  color: #ded1ff;
-  align-items: center;
-}
 select.select_download {
   width: 38%;
   height: 30px;
@@ -105,7 +98,7 @@ p.download_p1 {
   width: 70px;
   display: flex;
 }
-.button_download {
+/* .button_download {
   background: #855bf5 0% 0% no-repeat padding-box;
   border-radius: 5px;
   color: #fff;
@@ -116,7 +109,7 @@ p.download_p1 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
+} */
 
 .flex_download {
   display: flex;
@@ -206,4 +199,89 @@ p.modal_text_p2 {
   margin: 10px;
   color: #aaaaaa;
   margin-top: -12px;
+}
+
+.MuiIconButton-root {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 1px !important;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+
+.MuiInputBase-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  animation-name: mui-auto-fill-cancel;
+  letter-spacing: inherit;
+  animation-duration: 10ms;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 10px !important;
+}
+
+.makeStyles-textField-12 {
+  width: 123px !important;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.makeStyles-textField-4,
+.makeStyles-textField-10,
+.makeStyles-textField-2 {
+  width: 122px !important;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.city_row_download {
+  display: flex;
+  font-size: 12px;
+  color: #ded1ff;
+  align-items: center;
+  margin-top: 10px;
+}
+.makeStyles-textField-8,
+.makeStyles-textField-6 {
+  width: 122px !important;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.button_download {
+  background: #855bf5 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: #fff;
+  width: 40%;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.flex_download1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.button_download1 {
+  background: #855bf5 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: #fff;
+  width: 43%;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
