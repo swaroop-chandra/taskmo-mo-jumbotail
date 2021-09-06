@@ -108,12 +108,12 @@ function Table({ api, admin }) {
       ),
       center: true,
     },
-    {
-      name: "QC Status",
-      cell: (d) => <div className={d.stage2_status}>{d.stage2_status}</div>,
-      center: true,
-      width:"120px"
-    },
+    // {
+    //   name: "QC Status",
+    //   cell: (d) => <div className={d.stage2_status}>{d.stage2_status}</div>,
+    //   center: true,
+    //   width:"120px"
+    // },
     // {
     //   name: "Order Image",
     //   cell: (d) => (
@@ -151,16 +151,16 @@ function Table({ api, admin }) {
     //   center: true,
     // },
     {
-      name: "Order Status",
+      name: "QC Status",
 
       cell: (d) => (
         <div
-          className={`${d.stage3_status === "0" ? "Pending" : ""} ${
-            d.stage3_status === "1" ? "Approve" : ""
-          } ${d.stage3_status === "3" ? "Rejected" : ""}`}
-        >{`${d.stage3_status === "0" ? "Pending" : ""} ${
-          d.stage3_status === "1" ? "Approve" : ""
-        } ${d.stage3_status === "3" ? "Rejected" : ""}`}</div>
+          className={`${d.qc_status === "0" ? "Pending" : ""} ${
+            d.qc_status === "1" ? "Approved" : ""
+          } ${d.qc_status === "3" ? "Rejected" : ""}`}
+        >{`${d.qc_status === "0" ? "Pending" : ""} ${
+          d.qc_status === "1" ? "Approved" : ""
+        } ${d.qc_status === "3" ? "Rejected" : ""}`}</div>
       ),
       center: true,
     },

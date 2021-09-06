@@ -295,6 +295,7 @@ p.nin_download_b {
   /* max-width: 80px; */
   text-align: center;
 }
+.Approve,
 .Approved {
   color: #36a000;
   background-color: #18aa1b26;
